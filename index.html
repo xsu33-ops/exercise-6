@@ -18,7 +18,8 @@
       body {
       font-family: "Ledger", serif;
       font-weight: 400;
-      font-style: normal;  
+      font-style: normal;
+      background-color: LemonChiffon ;
       }
       
       h1 , h2 , ul {
@@ -29,6 +30,9 @@
       
       h1 {
       font-weight: 600;
+      text-align: center;
+      font-size: 55px;
+      color: #2c1c23;
       }
       
       h2 {
@@ -37,6 +41,53 @@
       
       ul {
       font-weight: 700;
+      list-style-type: none;
+      text-align: center;
+      }
+
+      li {
+      display: inline-block;
+      padding: 14px 16px;
+      }
+ 
+      a {
+      text-decoration: none;
+      }     
+      
+      a:hover {
+      background-color: FFCC00;
+      font: 20px;
+      }
+  
+      .container {
+      max-width: 2000px;
+      padding: 80px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 50px;
+      position: relative;
+      bottom: 50px;
+      }
+      
+      .container div {
+      background-color: LightSteelBlue;
+      color: white;
+      width: 594px;
+      font-size: 20px;
+      text-align: center;
+      }
+      
+      footer {
+      text-align: center;
+      background: lightblue;
+      width: 700px;
+      position: relative;
+      left: 355px;
+      bottom: 50px;
+      }
+      
+      .hero {
+        font-size: 35;
       }
       
     </style>
@@ -51,20 +102,37 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-
-    <h1>At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h1>
-
+    
+    <h1 class="hero">At Greg’s Banh Mi, we’re serving up the perfect <br> 
+      marriage of French and Vietnamese culinary <br>
+      traditions&mdash;crispy-on-the-outside, pillowy-on <br>
+      -the-inside baguettes loaded with bold, fresh <br>
+      flavours that'll make your taste buds sing.</h1>
+    <div class="container">
+    <div class="grid-item">
+    <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
     <h2>Classic Pork Banh Mi</h2>
     <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of p&acirc;t&eacute; on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
-
+    </div>
+    
+    <div class="grid-item">
+    <img src="banh-mi.jpg" alt="Lemongrass Chicken Banh Mi">
     <h2>Lemongrass Chicken Banh Mi</h2>
     <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalape&ntilde;os, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
-
+    </div>
+    
+    <div class="grid-item">
+    <img src="banh-mi.jpg" alt="Tofu Banh Mi">
     <h2>Tofu Banh Mi</h2>
     <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
-
+    </div>
+    
+    <div class="grid-item">
+    <img src="banh-mi.jpg" alt="Five-Spice Beef Banh Mi">
     <h2>Five-Spice Beef Banh Mi</h2>
     <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+    </div>
+    </div>
 
     <footer>
       <p>Because life’s too short for boring sandwiches. Greg’s got you covered&mdash;one crispy baguette at a time.</p>
